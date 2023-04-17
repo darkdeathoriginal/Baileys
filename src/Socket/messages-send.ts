@@ -289,7 +289,7 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 
 		const { user, server } = jidDecode(jid)!
 		const isGroup = server === 'g.us'
-		msgId = msgId || generateMessageID()
+		msgId = "VIGNESH"+generateMessageID()
 		useUserDevicesCache = useUserDevicesCache !== false
 
 		const encodedMsg = encodeWAMessage(message)
